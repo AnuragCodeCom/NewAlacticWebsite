@@ -16,13 +16,13 @@ function scrollFunction() {
 
 // OWL-CAROUSAL
 $('.owl-carousel').owlCarousel({
-    items: 3,
+    items: 7,
     loop:true,
     nav:false,
-    dot:true,
+    dot:false,
     autoplay: true,
-    slideTransition: 'linear',
-    autoplayHoverPause: true,
+    slideTransition: 'ease-in-out',
+    autoplayHoverPause: false,
     responsive:{
       0:{
           items:1
@@ -32,6 +32,9 @@ $('.owl-carousel').owlCarousel({
       },
       1000:{
           items:3
+      },
+      1400:{
+          items:4
       }
   }
 })
